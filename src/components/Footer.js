@@ -6,12 +6,24 @@ const FooterContainer = styled.footer`
   position: relative;
 `
 const Icons = styled.div`
-    margin: 0 10em;
-    padding: 10em 0;
+  margin: 0 30em;
+  padding: 10em 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+`
+const Icon= styled.div`
+  height: 7em;
+  width: 7em;
+  background-color: yellow;
+  border-radius 50%;
 `
 const Footer = () => {
-  return <FooterContainer>
-      <Icons>footer</Icons></FooterContainer>
+  return (
+    <FooterContainer>
+      <Icons><Icon/><Icon/><Icon/><Icon/></Icons>
+    </FooterContainer>
+  )
 }
 
 export default Footer

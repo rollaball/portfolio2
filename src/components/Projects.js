@@ -99,6 +99,7 @@ const ProjectText = styled.div`
   }
   h1 {
     font-size: 2.5em;
+    margin-left: 0.4em;
   }
   h3 {
     width: 100%;

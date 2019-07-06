@@ -47,11 +47,11 @@ const AboutIntro = styled.div`
       margin-top: 20%;
     }
     45% {
-      opacity: 1;
+      opacity: 0;
       margin-top: 0%;
     }
     100% {
-      opacity: 1;
+      opacity: 0;
       margin-top: 0%;
     }
   }
@@ -107,8 +107,8 @@ const About = () => {
         <div>
           <span>
             I'M <br />
-            SHETTY <br />
-            SAURABH
+            SAURABH <br />
+            SHETTY <span style={{fontSize: '0.2em', display: 'inline'}} >FULLSTACK DEVELOPER</span>
           </span>
           <span></span>
           <span></span>
