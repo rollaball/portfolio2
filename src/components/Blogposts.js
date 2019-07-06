@@ -5,7 +5,6 @@ import blogpostImage from "../images/beta.svg"
 const BlogpostContainer = styled.div`
   background-color: yellow;
   color: #555555;
-  height: 100vh;
   font-family: sans-serif;
   display: relative;
 `
@@ -21,10 +20,9 @@ const BlogpostText = styled.div`
   .content {
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
+    margin-top: -1em;
   }
   .text {
-    width: 46%;
     font-size: 3em;
   }
   .letter {
@@ -36,16 +34,29 @@ const BlogpostText = styled.div`
     background-repeat: no-repeat;
   }
   h3 {
+    margin-top: 0.5em;
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-bottom: 0.2em;
-    border-bottom: 3px #555555 solid;
     transition: all 0.3s;
     :hover {
       content: "";
       color: #777744;
       cursor: pointer;
       transform: scale(1.05);
-      border-bottom: 3px rgba(0, 0, 0, 0) solid;
+      .line {
+        width: 0;
+      }
     }
+  }
+  .line {
+    margin: 0.5em 0;
+    width: 100%;
+    background-color: #555555;
+    height: 3px;
+    transition: all 1s;
   }
 `
 const Blogposts = () => {
@@ -56,9 +67,33 @@ const Blogposts = () => {
         <h1>BLOGPOSTS</h1>
         <div className="content">
           <p className="text">
-            <h3>BLOG1</h3>
-            <h3>BLOG2</h3>
-            <h3>BLOG3</h3>
+            <h3>
+              <a
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                href="https://medium.com/@saurabh.shetty100/74b94c126cba"
+              >
+                Crash-Only Software
+              </a>
+              <div className="line"></div>
+            </h3>
+            <h3>
+              <a
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                href="https://medium.com/@saurabh.shetty100/74b94c126cba"
+              >
+                Blog
+              </a>
+              <div className="line"></div>
+            </h3>
+            <h3>
+              <a
+                style={{ color: "inherit", textDecoration: "inherit" }}
+                href="https://medium.com/@saurabh.shetty100/74b94c126cba"
+              >
+                Blog
+              </a>
+              <div className="line"></div>
+            </h3>
           </p>
         </div>
       </BlogpostText>
